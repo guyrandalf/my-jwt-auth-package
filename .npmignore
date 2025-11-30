@@ -1,0 +1,9 @@
+node_modules
+src
+test
+*.log
+.eslintrc*
+.babelrc
+eslint.config.mjs
+.gitignore
+.npmignore

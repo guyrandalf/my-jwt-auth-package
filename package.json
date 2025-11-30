@@ -1,0 +1,59 @@
+{
+  "name": "@guyrandalf/my-jwt-auth",
+  "version": "1.0.0",
+  "description": "Production-ready JWT authentication module with refresh tokens, password reset, token blacklisting, and more",
+  "main": "lib/index.js",
+  "types": "index.d.ts",
+  "files": [
+    "lib",
+    "index.d.ts",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "mocha --require @babel/register test/**/*.js",
+    "lint": "eslint src"
+  },
+  "keywords": [
+    "jwt",
+    "authentication",
+    "registration",
+    "authorization",
+    "middleware",
+    "refresh-token",
+    "password-reset",
+    "token-blacklist",
+    "express",
+    "nextjs",
+    "typescript"
+  ],
+  "author": "Randalf Ehigiator",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guyrandalf/my-jwt-auth-package.git"
+  },
+  "bugs": {
+    "url": "https://github.com/guyrandalf/my-jwt-auth-package/issues"
+  },
+  "homepage": "https://github.com/guyrandalf/my-jwt-auth-package#readme",
+  "type": "commonjs",
+  "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/preset-env": "^7.28.5",
+    "@babel/register": "^7.28.3",
+    "@eslint/js": "^9.39.1",
+    "chai": "^6.2.1",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0",
+    "mocha": "^11.7.5",
+    "typescript-eslint": "^8.48.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "joi": "^18.0.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
