@@ -1,6 +1,6 @@
 {
   "name": "@guyrandalf/my-jwt-auth",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Production-ready JWT authentication module with refresh tokens, password reset, token blacklisting, and more",
   "main": "lib/index.js",
   "types": "index.d.ts",

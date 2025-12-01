@@ -62,13 +62,13 @@ const loginUser = async (credentials, dbAdapter, secret, options = {}) => {
     return {
       accessToken: tokens.accessToken,
       refreshToken: tokens.refreshToken,
-      user: { id: user.id, email: user.email },
+      user,
     };
   }
 
   // Legacy single token support
   const token = signToken(payload, secret, accessTokenOptions);
-  return { token, user: { id: user.id, email: user.email } };
+  return { token, user };
 };
 
 module.exports = { loginUser };
