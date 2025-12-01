@@ -18,7 +18,7 @@ const registerUser = async (userData, customSchema = {}, dbAdapter) => {
     email: Joi.string().email().required(),
     password: Joi.string().min(8).required(),
   };
-  const schema = Joi.object({ ...baseSchema, ...customSchema });
+  const schema = Joi.object({ ...baseSchema, ...customSchema }).unknown(true);
   const { error } = schema.validate(userData);
   if (error) {
     throw new ValidationError(
